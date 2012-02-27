@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>welcome to Tode.js , My name is ${name} </title>
+</head>
+<body>
+<p>header</p>
+<p>banner</p>
+<div>
+   <ul>
+   {{if(a!=2)}}
+        <li>Hope you are fine, and best wishes to your wife and children!</li>
+        <li>your name is ${name}. yes,my name is ${name} !! gaga!</li>
+        <ul>
+        {{if(b!=2)}}
+             {{for(var i=0;i<6;i++)}}
+                 <li>hello ${name}, Number is ${i}.</li>
+             {{/for}} 
+             <li>This is a loop for json object below. </li>
+             {{for(var i=0;i<user.length;i++)}}
+                 <li>This is ${user[i]}.</li>
+             {{/for}}    
+        {{elseif(c>1)}}
+           <li>This is a elseif TEST</li>           
+        {{else}}     
+             <li>This is a else TEST</li> 
+        {{/if}}
+        </ul>
+   {{else}}
+        <li> I'am not a 2 bi man; </li>     
+   {{/if}}
+   </ul>
+</div> 
+<div>
+	 <h1>${name}</h1>
+	 <h1>${name}</h1>
+</div>
+<p>footer</p>
+</body>
+</html>	
